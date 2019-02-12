@@ -1,0 +1,2 @@
+# CoreStart
+.NET Core start
