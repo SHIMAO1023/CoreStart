@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoreStart.Domain.Model.Enum;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -19,5 +20,6 @@ namespace CoreStart.Domain.Model
         [MaxLength(16), Required]
         public string Password { get; set; }
 
+        public Gender Gender { get; set; }
     }
 }
