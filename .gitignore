@@ -3,3 +3,22 @@
 ################################################################################
 
 /CoreStart/CoreStart.Repository/obj/Debug/netcoreapp2.2
+/.vs
+/CoreStart/CoreStart.Common/obj/Release/netcoreapp2.2
+/CoreStart/CoreStart.Common/obj/Debug/netcoreapp2.2
+/CoreStart/CoreStart/obj
+/CoreStart/CoreStart/bin/Debug/netcoreapp2.2
+/CoreStart/.vs
+/CoreStart/CoreStart.Common/obj
+/CoreStart/CoreStart.Test/obj
+/CoreStart/CoreStart.Service/obj
+/CoreStart/CoreStart.Repository/obj
+/CoreStart/CoreStart.Domain/obj
+/CoreStart/CoreStart.Domain/bin/Debug/netcoreapp2.2
+/CoreStart/CoreStart.Common/bin/Debug/netcoreapp2.2
+*/bin
+*/obj
+/CoreStart/CoreStart.Repository/bin/Debug/netcoreapp2.2
+/CoreStart/CoreStart.Repository/Migrations
+/CoreStart/CoreStart.Service/bin/Debug/netcoreapp2.2
+/CoreStart/CoreStart.Test/bin/Debug/netcoreapp2.2
