@@ -28,7 +28,7 @@ namespace CoreStart
         public void ConfigureServices(IServiceCollection services)
         {
             //注册DBContext
-            services.AddDbContextPool<DataContext>(options=>options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContextPool<DataContext>(options=>options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));            
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
