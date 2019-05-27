@@ -6,9 +6,9 @@ using System.Text;
 
 namespace CoreStart.Domain.Model
 {
-    public class BaseModel
+    public class BaseEntity
     {
-        public BaseModel()
+        public BaseEntity()
         {
             IsActive = true;
             CreateTime = DateTime.Now;

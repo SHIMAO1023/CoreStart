@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreStart.Domain.Model.Module
 {
-    public class FunctionModuleRole : BaseModel
+    public class FunctionModuleRole : BaseEntity
     {
         public int FunctionModuleID { get; set; }
 

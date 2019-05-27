@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CoreStart.Domain.Model.Module
 {
-    public class FunctionModule : BaseModel
+    public class FunctionModule : BaseEntity
     {
         [MaxLength(32),Required]
         public string Name { get; set; }

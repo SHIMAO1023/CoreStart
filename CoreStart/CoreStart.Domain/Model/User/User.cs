@@ -1,12 +1,11 @@
-﻿using CoreStart.Domain.Model.Enum;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace CoreStart.Domain.Model
 {
-    public class User : BaseModel
+    public class User : BaseEntity
     {
         [MaxLength(16), Required]
         public string Name { get; set; }

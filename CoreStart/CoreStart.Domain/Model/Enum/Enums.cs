@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CoreStart.Domain.Model.Enum
+namespace CoreStart.Domain
 {
     public class Enums
     {
@@ -12,6 +12,6 @@ namespace CoreStart.Domain.Model.Enum
     {
         Unknow,
         Male,
-        Female,        
+        Female,
     }
 }

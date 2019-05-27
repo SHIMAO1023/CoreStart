@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CoreStart.Domain.Model.RolePermission
 {
-    public class Role : BaseModel
+    public class Role : BaseEntity
     {
         [MaxLength(16), Required]
         public string Name { get; set; }

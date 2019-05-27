@@ -69,37 +69,43 @@ namespace CoreStart.Repository
 
         public bool Insert(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Add(entity);
+            return _dbContext.SaveChanges() > 0;
         }
 
         public bool Insert(IList<TEntity> entities)
         {
-            throw new NotImplementedException();
+            _dbSet.AddRange(entities);
+            return _dbContext.SaveChanges() > 0;
         }
 
-        public Task<bool> InsertAsync(TEntity entity)
+        public async Task<bool> InsertAsync(TEntity entity)
         {
-            throw new NotImplementedException();
+            await _dbSet.AddAsync(entity);
+            return await _dbContext.SaveChangesAsync() > 0;
         }
 
-        public Task<bool> InsertAsync(IList<TEntity> entities)
+        public async Task<bool> InsertAsync(IList<TEntity> entities)
         {
-            throw new NotImplementedException();
+            await _dbSet.AddRangeAsync(entities);
+            return await _dbContext.SaveChangesAsync() > 0;
         }
 
         #endregion
 
 
-        #region 增
+        #region 改
 
         public bool Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            return _dbContext.SaveChanges() > 0;
         }
 
-        public Task<bool> UpdateAsync(TEntity entity)
+        public async Task<bool> UpdateAsync(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            return await _dbContext.SaveChangesAsync() > 0;
         }
 
         #endregion
@@ -109,22 +115,37 @@ namespace CoreStart.Repository
 
         public bool Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            //?
+            _dbSet.Remove(entity);
+            return _dbContext.SaveChanges() > 0;
         }
 
         public bool Delete(TKey key)
         {
-            throw new NotImplementedException();
+            var entity = _dbSet.Find(key);
+            if (entity == null)
+            {
+                return false;
+            }
+            _dbSet.Remove(entity);
+            return _dbContext.SaveChanges() > 0;
         }
 
-        public Task DeleteAsync(TEntity entity)
+        public async Task<bool> DeleteAsync(TEntity entity)
         {
-            throw new NotImplementedException();
+            _dbSet.Remove(entity);
+            return await _dbContext.SaveChangesAsync() > 0;
         }
 
-        public Task DeleteAsync(TKey key)
+        public async Task<bool> DeleteAsync(TKey key)
         {
-            throw new NotImplementedException();
+            var entity = _dbSet.Find(key);
+            if (entity == null)
+            {
+                return false;
+            }
+            _dbSet.Remove(entity);
+            return await _dbContext.SaveChangesAsync() > 0;
         }
 
         #endregion

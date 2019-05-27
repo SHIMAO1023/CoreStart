@@ -1,0 +1,9 @@
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\bin\Debug\netstandard2.0\CoreStart.Dto.deps.json
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\bin\Debug\netstandard2.0\CoreStart.Dto.dll
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\bin\Debug\netstandard2.0\CoreStart.Dto.pdb
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\obj\Debug\netstandard2.0\CoreStart.Dto.csprojAssemblyReference.cache
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\obj\Debug\netstandard2.0\CoreStart.Dto.csproj.CoreCompileInputs.cache
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\obj\Debug\netstandard2.0\CoreStart.Dto.AssemblyInfoInputs.cache
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\obj\Debug\netstandard2.0\CoreStart.Dto.AssemblyInfo.cs
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\obj\Debug\netstandard2.0\CoreStart.Dto.dll
+C:\dev\dotNet\CoreStart\CoreStart\CoreStart.Dto\obj\Debug\netstandard2.0\CoreStart.Dto.pdb

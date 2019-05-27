@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoreStart.Domain.Model.Role
 {
-    public class UserRole : BaseModel
+    public class UserRole : BaseEntity
     {
         public int UserID { get; set; }
 

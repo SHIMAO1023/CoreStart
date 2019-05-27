@@ -50,8 +50,15 @@ namespace CoreStart.Repository
 
         bool Delete(TEntity entity);
         bool Delete(TKey key);
-        Task DeleteAsync(TEntity entity);
-        Task DeleteAsync(TKey key);
+        Task<bool> DeleteAsync(TEntity entity);
+        Task<bool> DeleteAsync(TKey key);
+
+        #endregion
+
+
+        #region execute sql
+
+        //todo
 
         #endregion
     }

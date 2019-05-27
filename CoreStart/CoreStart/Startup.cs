@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using CoreStart.Repository;
+using CoreStart.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,8 +29,13 @@ namespace CoreStart
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper();
+
             //注册DBContext
-            services.AddDbContextPool<DataContext>(options=>options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));            
+            services.AddDbContextPool<BaseDbContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IUserService, UserService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
